@@ -1,0 +1,21 @@
+---
+title: ""
+featured_image: '/images/heritagetree.jpg'
+description: ""
+---
+
+<body>
+<p style="text-align:left;">I am an Economist at the Bank of Canada, and my research covers topics in
+payment economics and survey methodology. I have an MA in Economics from Carleton University and a BMath
+in Statistics from University of Waterloo.</p>
+
+<p style="text-align:left;">My professional interests are in Statistics, Survey Methodology, and Data Science.
+My personal interests are many and fleeting, but include playing guitar and drums, reading, history, and tree-hunting.</p>
+
+<p style="text-align:left;">On this site you will find links to my research, stata and R programs, class projects, and personal interest projects.</p>
+
+<p style="text-align:left;">At the top-right corner you can find my CV as well as links to my academic sites.</p>
+
+<p style="text-align:left;">This website is designed using <a href="https://gohugo.io/">Hugo</a> with 
+the <a href="https://github.com/theNewDynamic/gohugo-theme-ananke">ananke</a> template.</p>
+</body>
