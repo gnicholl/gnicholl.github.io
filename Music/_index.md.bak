@@ -24,7 +24,7 @@ description: ""
 <p style="text-align:left;"> Here is a couple pictures of me making a fool of myself in front of Cavs and Stu from King Gizz
 after their 2019 show in Montreal: </p>
 
-<img src="CavsPic.jpg" alt="Cavs">
+<img style="margin-bottom:20px;" src="CavsPic.jpg" alt="Cavs">
 
-<img src="StuPic.jpg" alt="Stu">
+<img style="margin-bottom:20px;" src="StuPic.jpg" alt="Stu">
 
