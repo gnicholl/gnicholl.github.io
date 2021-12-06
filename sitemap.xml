@@ -6,11 +6,35 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://gnicholl.github.io/tags/Coursework/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/Data-Science/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://gnicholl.github.io/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://gnicholl.github.io/Projects/chapter-1/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://gnicholl.github.io/Music/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/Projects/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/R/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/Stata/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -19,6 +43,14 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/Trees/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/University-of-Maryland/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/University-of-Michigan/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
