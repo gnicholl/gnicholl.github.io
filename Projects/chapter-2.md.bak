@@ -1,0 +1,57 @@
+---
+date: 2021-12-08T08:00
+description: ""
+featured_image: '/images/heritagetree.jpg'
+tags: ["Statistics", "Data Science", "Stata"]
+title: "ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test "
+---
+
+<a href="https://github.com/gnicholl/ksmirnovk">Here is some Stata code</a>
+I produced back in 2017. A colleague asked how to perform a k-sample
+Kolmogorov-Smirnov test in Stata, and I was surprised to find that it is not widely implemented.
+I was more surpised to discover that such a test was developed back in 
+<a href="https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-30/issue-2/K-Sample-Analogues-of-the-Kolmogorov-Smirnov-and-Cramer-V/10.1214/aoms/1177706261.full">
+1959 by J Kiefer</a>. I thought it would be straightforward to implement the test given Kiefer's
+formula--all we need is a test statistic and and a CDF.
+
+The test statisic is straightforward conceptually, though a bit cumbersome to program.
+Let's say we are interested in testing the null hypothesis that the distribution of \\(X\\) 
+differs in at least one of \\(k\\) groups. Analogous to the 2-sample Kolmogorov-Smirnov test,
+we use the following test statistic:
+
+$$D = \sqrt{\max_x \sum_j n_j (S_{n_j}^{(j)} - \bar {S_N} (x))^2}$$
+
+Where \\(j = 1,...,k\\), \\(n_j\\) is the number of observations in group \\(j\\), 
+\\(S_{n_j}^{(j)}\\) is the empirical CDF of group \\(j\\), and \\(\bar {S_N} (x)\\)
+is the empirical CDF of the pooled data (i.e. \\(N = \sum_j n_j\\)).
+
+Kiefer's contribution was to provide an asymptotic CDF for the distribution of this test statistic,
+thereby giving us a method for testing our null hypothesis. The CDF is as follows:
+
+$$\Phi_k(d) = Pr(D < d; k) = \frac{4}{\Gamma(\frac{k-1}{2})(2d)^{(k-1)/2}} \sum_{n=1}^{\infty} \frac{\gamma_{\frac{k-3}{2},n} \exp \{\frac{\gamma_{(k-3)/2,n}}{2d}\}}{\[J_{\frac{k-1}{2}} (\gamma_{(k-3)/2,n})\]^2}$$
+
+and the p-value for our test is simply \\(1 - \Phi_k(d)\\).
+
+For \\(k=2\\) and \\(k=4\\), this CDF reduces to a nice closed-form.
+For \\(k=3\\) or \\(k>4\\) it is a slow and computationally intensive task.
+\\(J_v\\) is a bessel function of the first kind, and \\(\gamma_{v,n}\\) is the nth root
+of \\(J_v\\). You will note that we need to find as many roots as we can
+in order to approximate the infinite sum in \\(\Phi_k(d)\\). 
+Additionally, the bessel function itself can be written using integrals,
+and therefore requires quadrature to compute.
+
+To speed things up, I pre-compute the first 30 roots for \\(k=3,5,6,7,8,9,10\\)
+in my program,
+so that this does not need to be done on the fly (though we still need to evaluate
+the bessel function using quadrature). This was enough to reproduce Kiefer's results,
+which were reported up to 6 decimal places.
+
+The command can be run simply as 
+
+```
+ksmirnovk X , by(group)
+```
+
+where `group` should contain categories that are integers from \\(1\\) to \\(k\\).
+
+I think Kiefer would be please that someone implemented his test all these years later and double-checked his results!
