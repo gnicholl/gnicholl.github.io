@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statistics on Gradon Nicholls</title>
-    <link>https://gnicholl.github.io/tags/Statistics/</link>
-    <description>Recent content in Statistics on Gradon Nicholls</description>
+    <title>Mathematical Statistics on Gradon Nicholls</title>
+    <link>https://gnicholl.github.io/tags/Mathematical-Statistics/</link>
+    <description>Recent content in Mathematical Statistics on Gradon Nicholls</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Gradon Nicholls 2021</copyright><atom:link href="https://gnicholl.github.io/tags/Statistics/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Gradon Nicholls 2021</copyright><atom:link href="https://gnicholl.github.io/tags/Mathematical-Statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test </title>
       <link>https://gnicholl.github.io/Post/chapter-2/</link>

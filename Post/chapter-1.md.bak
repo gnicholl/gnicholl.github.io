@@ -1,0 +1,27 @@
+---
+date: 2021-12-06T14:00
+description: ""
+featured_image: '/images/heritagetree.jpg'
+tags: ["Data Science", "R" , "Stata" , "Coursework"]
+title: "How Influential Are Music Critics?"
+---
+
+I gave this presentation on December 6, 2021 as part of the course SURV727 "Fundamentals of Cmputing and Data Display."
+I use R for data collection, and then clean and analyze the data in Stata.
+
+My data science experience grew quickly and greatly during this course, and I had a lot of fun combing various sources of data
+involving API's from Spotify, Last.FM, Wikipedia, and Google, and using web scraping techniques to obtain review scores from Wikipedia.
+
+A technique I used was to funnel strings through search engines in order to obtain data from the API.
+I almost think of it as a "fuzzy match" where we let the search engine handle the fuzziness instead of creating
+own string comparators.
+
+The results are very rough, but I think the process for collecting the data is very interesting, and
+there are plenty of code examples. If you take the results on face value (you probably shouldn't),
+the model predicts an album with 1.7 million listens
+could earn about 100,000 additional listens by improving their album from a 7/10 to an 8/10. This
+translates to about $300 USD if you assume revenue of about 
+<a href="https://www.nationalworld.com/culture/music/how-much-does-100-million-spotify-streams-pay-process-explained-after-tom-rosenthal-song-goes-viral-on-tiktok-3387260">
+$0.003 USD per listen.</a>
+
+<iframe src="https://drive.google.com/file/d/1-LYffzFqXnNnJnE7rLKB8_oIDrXyHbZq/preview" width="640" height="480" allow="autoplay"></iframe>

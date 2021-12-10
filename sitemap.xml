@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gnicholl.github.io/Projects/</loc>
+    <loc>https://gnicholl.github.io/Post/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -22,11 +22,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gnicholl.github.io/Projects/chapter-1/</loc>
+    <loc>https://gnicholl.github.io/Post/chapter-1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gnicholl.github.io/Projects/chapter-2/</loc>
+    <loc>https://gnicholl.github.io/Post/chapter-2/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/Mathematical-Statistics/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -35,6 +39,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/tags/R/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/Research/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
