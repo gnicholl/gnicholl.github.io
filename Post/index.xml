@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Gradon Nicholls</title>
-    <link>https://gnicholl.github.io/post/</link>
+    <link>https://gnicholl.github.io/Post/</link>
     <description>Recent content in Blog on Gradon Nicholls</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Gradon Nicholls 2021</copyright>
-    <lastBuildDate>Thu, 23 Dec 2021 12:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Dec 2021 12:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/Post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Influential Are Music Critics?</title>
-      <link>https://gnicholl.github.io/post/musiccriticspresentation/</link>
+      <link>https://gnicholl.github.io/Post/musiccriticspresentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gnicholl.github.io/post/musiccriticspresentation/</guid>
+      <guid>https://gnicholl.github.io/Post/musiccriticspresentation/</guid>
       <description>I gave this presentation on December 6, 2021 as part of the course SURV727 &amp;ldquo;Fundamentals of Cmputing and Data Display.&amp;rdquo; I use R for data collection, and then clean and analyze the data in Stata.
 My data science experience grew quickly and greatly during this course, and I had a lot of fun combing various sources of data involving API&amp;rsquo;s from Spotify, Last.FM, Wikipedia, and Google, and using web scraping techniques to obtain review scores from Wikipedia.</description>
     </item>
     
     <item>
       <title>ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test</title>
-      <link>https://gnicholl.github.io/post/ksmirnovk/</link>
+      <link>https://gnicholl.github.io/Post/ksmirnovk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gnicholl.github.io/post/ksmirnovk/</guid>
+      <guid>https://gnicholl.github.io/Post/ksmirnovk/</guid>
       <description>Here is some Stata code I wrote back in 2017. A colleague asked how to perform a Kolmogorov-Smirnov test in Stata when there are more than two groups. I was surprised to find that such a test is not implemented in Stata, nor widely implemented in general. I thought perhaps that this was because such a test did not exist.
 On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test was developed back in 1959 by Jack Kiefer, a mathematical statistician at Cornell.</description>
     </item>
     
     <item>
       <title>The Big Data Paradox in COVID Surveys</title>
-      <link>https://gnicholl.github.io/post/BradleyEtAl2021/</link>
+      <link>https://gnicholl.github.io/Post/BradleyEtAl2021/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gnicholl.github.io/post/BradleyEtAl2021/</guid>
+      <guid>https://gnicholl.github.io/Post/BradleyEtAl2021/</guid>
       <description>Meng (2018) summarizes the Big Data Paradox as &#34;The more the data, the surer we fool ourselves.&#34;It may be counterintuitive at first--even a trained Statistician is likelyto get caught in the idea that &#34;more data is better&#34; at some point.But this idea can be quickly squashed with simple examples. For instance,if we are interested in measuring the average height of the population,surveying 1,000 men is going to give us an estimate that is too high.</description>
     </item>
     
