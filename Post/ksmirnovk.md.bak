@@ -1,0 +1,93 @@
+---
+date: 2021-12-08T08:00
+description: ""
+featured_image: '/images/heritagetree.jpg'
+tags: ["Statistics", "Mathematical Statistics", "Stata"]
+title: "ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test"
+type: post
+---
+
+<a href="https://github.com/gnicholl/ksmirnovk">Here is some Stata code</a>
+I wrote back in 2017. A colleague asked how to perform a
+Kolmogorov-Smirnov test in Stata when there are more than two groups.
+I was surprised to find that such a test is not implemented
+in Stata, nor widely implemented in general.
+I thought perhaps that this was because such a test did not exist. 
+
+On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test 
+was developed back in 
+<a href="https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-30/issue-2/K-Sample-Analogues-of-the-Kolmogorov-Smirnov-and-Cramer-V/10.1214/aoms/1177706261.full">
+1959 by Jack Kiefer</a>, a 
+<a href="https://www.jstor.org/stable/2683084?seq=1#metadata_info_tab_contents">mathematical statistician at Cornell</a>. 
+I thought it would be straightforward to implement the test given Kiefer's
+formula--all we need is a test statistic and and a CDF. As you will see,
+it took me down a road of infinite sums, quadrature, and bessel functions.
+
+The test statisic is straightforward conceptually, though cumbersome to program, as it relies
+on computing maximum (squared) differences between empirical CDFs.
+Let's say we are interested in testing the null hypothesis that the distribution of \\(X\\) 
+differs in at least one of \\(k\\) groups. Analogous to the 2-sample Kolmogorov-Smirnov test,
+we use the following test statistic:
+
+$$D = \sqrt{\max_x \sum_j n_j (S_{n_j}^{(j)} (x) - \bar {S_N} (x))^2}$$
+
+Where \\(j = 1,...,k\\), \\(n_j\\) is the number of observations in group \\(j\\), 
+\\(S_{n_j}^{(j)} (x)\\) is the empirical CDF of group \\(j\\),
+and \\(\bar {S_N} (x)\\) is the empirical CDF of the pooled data (i.e. \\(N = \sum_j n_j\\)).
+
+Kiefer's contribution was to provide an asymptotic CDF for the distribution of this test statistic
+for general  \\(k \geq 2\\),
+thereby giving us a method for testing our null hypothesis. The CDF is as follows:
+
+$$\Phi_k(d) = Pr(D < d; k) = \frac{4}{\Gamma(\frac{k-1}{2})(2d)^{(k-1)/2}} \sum_{n=1}^{\infty} \frac{\gamma_{\frac{k-3}{2},n} \exp \{\frac{\gamma_{(k-3)/2,n}}{2d}\}}{\[J_{\frac{k-1}{2}} (\gamma_{(k-3)/2,n})\]^2}$$
+
+and the p-value for our test is \\(Pr(D > d; k) = 1 - \Phi_k(d)\\).
+
+In the case of \\(k=2\\), this test simplifies to
+
+$$\Phi_2(d) = \sqrt{\frac{2\pi}{d}} \sum_{n=1}^{\infty} e^{-\frac{((2n-1)\pi)^2}{8d} }$$
+
+which is the <a href="https://www.jstatsoft.org/article/view/v008i18">
+original two-sample Kolmogorov-Smirnov test</a>.
+
+It turns out the formula also simplifies to elementary functions
+in the case of \\(k=4\\):
+
+$$\Phi_4(d) = \sqrt{\frac{2 \pi^5}{d^3}} \sum_{n=1}^{\infty}  n^2 e^{-\frac{(n\pi)^2}{2d}}  $$
+
+However, in the cases \\(k=3\\) or \\(k>4\\) it is a slow and computationally intensive task to compute the CDF.
+This is because it depends on \\(J_{(k-1)/2}\\), which is a bessel function of the first kind,
+and \\(\gamma_{(k-3)/2,n}\\), which is the nth root of bessel function \\(J_{(k-3)/2}\\). 
+
+Bessel funtions have infinitely many roots, and we need to find as many as we can
+in order to approximate the infinite sum in \\(\Phi_k(d)\\). 
+Additionally, the bessel function itself can be written using integrals,
+and therefore requires quadrature to compute.
+
+To speed things up for real-time use,
+I pre-compute the first 30 Bessel roots in cases \\(k=3,5,6,7,8,9,10\\).
+Therefore, as long as you are not attempting this test on 11 or more groups,
+it should run relatively quickly, though we still need to evaluate the bessel
+function using quadrature (unless \\(k=2\\) or \\(k=4\\)), and to compute
+the first 30 terms of the infinite sum. 
+
+It turns out that 30 roots (i.e. 30 terms of the sum)
+and 200 quadrature points was enough to 
+<a href="https://github.com/gnicholl/ksmirnovk/raw/main/LookupTable.xlsx">
+reproduce Kiefer's results</a>,
+which were reported up to 6 decimal places for cases \\(k=2,...,6\\).
+I imagine that with more experimentation, one could find that even fewer roots
+and fewer quadrature points would be sufficient. Note for example that in 
+<a href="https://www.stata.com/manuals/rksmirnov.pdf">Stata's documentation of
+the ksmirnov command</a> they use only the first 5 terms, though this is
+of course only in the simpler \\(k=2\\) case.
+
+The command can be run simply as 
+
+```
+ksmirnovk X , by(group)
+```
+
+where `group` should contain categories that are integers from \\(1\\) to \\(k\\).
+
+I think Kiefer would be pleased that someone implemented his test all these years later and double-checked his results!

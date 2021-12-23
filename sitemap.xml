@@ -2,11 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gnicholl.github.io/Post/</loc>
+    <loc>https://gnicholl.github.io/post/</loc>
+    <lastmod>2021-12-23T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/</loc>
+    <lastmod>2021-12-23T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/Big-Data/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/Cheat-Sheets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,15 +32,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gnicholl.github.io/</loc>
+    <loc>https://gnicholl.github.io/post/musiccriticspresentation/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gnicholl.github.io/Post/chapter-1/</loc>
+    <loc>https://gnicholl.github.io/post/ksmirnovk/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gnicholl.github.io/Post/chapter-2/</loc>
+    <loc>https://gnicholl.github.io/tags/Literature-Review/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -54,7 +68,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://gnicholl.github.io/tags/Survey-Methodology/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://gnicholl.github.io/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/post/BradleyEtAl2021/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

@@ -8,10 +8,10 @@
     <copyright>Gradon Nicholls 2021</copyright><atom:link href="https://gnicholl.github.io/tags/R/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Influential Are Music Critics?</title>
-      <link>https://gnicholl.github.io/Post/chapter-1/</link>
+      <link>https://gnicholl.github.io/post/musiccriticspresentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gnicholl.github.io/Post/chapter-1/</guid>
+      <guid>https://gnicholl.github.io/post/musiccriticspresentation/</guid>
       <description>I gave this presentation on December 6, 2021 as part of the course SURV727 &amp;ldquo;Fundamentals of Cmputing and Data Display.&amp;rdquo; I use R for data collection, and then clean and analyze the data in Stata.
 My data science experience grew quickly and greatly during this course, and I had a lot of fun combing various sources of data involving API&amp;rsquo;s from Spotify, Last.FM, Wikipedia, and Google, and using web scraping techniques to obtain review scores from Wikipedia.</description>
     </item>

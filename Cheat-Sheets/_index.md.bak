@@ -1,0 +1,16 @@
+---
+title: "Cheat Sheets"
+featured_image: '/images/heritagetree.jpg'
+description: ""
+---
+
+<p style="text-align:left;">
+I'll use this page to compile a list of "cheat sheets" for coding, etc. that I've found to be useful reference guides.
+</p>
+
+<ul>
+<li><p style="text-align:left;">
+<a href="https://evoldyn.gitlab.io/evomics-2018/ref-sheets/R_strings.pdf">
+Regular expressions in R using stringr
+</a></p></li>
+</ul>

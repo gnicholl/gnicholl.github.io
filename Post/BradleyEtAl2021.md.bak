@@ -1,0 +1,34 @@
+---
+date: 2021-12-23T13:40
+description: ""
+featured_image: '/images/heritagetree.jpg'
+tags: ["Statistics", "Survey Methodology", "Big Data", "Literature Review"]
+title: "The Big Data Paradox in COVID Surveys"
+type: post
+---
+
+<a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-2/Statistical-paradises-and-paradoxes-in-big-data-I--Law/10.1214/18-AOAS1161SF.full">
+Meng (2018)</a> summarizes the Big Data Paradox as 
+"The more the data, the surer we fool ourselves."
+It may be counterintuitive at first--even a trained Statistician is likely
+to get caught in the idea that "more data is better" at some point.
+But this idea can be quickly squashed with simple examples. For instance,
+if we are interested in measuring the average height of the population,
+surveying 1,000 men is going to give us an estimate that is too high.
+Surveying 1 million men will do nothing except give us a more accurate
+estimate of average male height--i.e. "the surer we fool ourselves."
+
+The key concepts here are Bias and Variance. Collecting a larger sample
+will definitely reduce variance, but if we collect the sample in a biased way,
+we may do more harm than good.
+
+<a href="https://www.nature.com/articles/s41586-021-04198-4">Bradley et al</a>
+have published an interesting paper in Nature
+where they observe the Big Data paradox clear as day 
+in surveys estimating COVID vaccination uptake. Using the CDC's vaccination
+numbers as the gold-standard benchmark, they compare three surveys and find that
+the survey providing the most accurate estimates is also the one with the smallest
+sample size--only 1000 respondents! Below is
+<a href="https://www.nature.com/articles/s41586-021-04198-4/figures/1">Figure 1 from the paper.</a>
+
+<img src="../BradleyEtAl2021_fig1.webp" alt="BradleyEtAlFigure">

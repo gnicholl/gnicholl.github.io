@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Survey Methodology on Gradon Nicholls</title>
+    <link>https://gnicholl.github.io/tags/Survey-Methodology/</link>
+    <description>Recent content in Survey Methodology on Gradon Nicholls</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Gradon Nicholls 2021</copyright><atom:link href="https://gnicholl.github.io/tags/Survey-Methodology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Big Data Paradox in COVID Surveys</title>
+      <link>https://gnicholl.github.io/post/BradleyEtAl2021/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/post/BradleyEtAl2021/</guid>
+      <description>Meng (2018) summarizes the Big Data Paradox as &#34;The more the data, the surer we fool ourselves.&#34;It may be counterintuitive at first--even a trained Statistician is likelyto get caught in the idea that &#34;more data is better&#34; at some point.But this idea can be quickly squashed with simple examples. For instance,if we are interested in measuring the average height of the population,surveying 1,000 men is going to give us an estimate that is too high.</description>
+    </item>
+    
+  </channel>
+</rss>

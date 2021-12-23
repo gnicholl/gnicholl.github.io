@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Mathematical Statistics | Gradon Nicholls</title>
+    <title>ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test | Gradon Nicholls</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Gradon Nicholls&#39; personal website.">
+    <meta name="description" content="Here is some Stata code I wrote back in 2017. A colleague asked how to perform a Kolmogorov-Smirnov test in Stata when there are more than two groups. I was surprised to find that such a test is not implemented in Stata, nor widely implemented in general. I thought perhaps that this was because such a test did not exist.
+On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test was developed back in 1959 by Jack Kiefer, a mathematical statistician at Cornell.">
     <meta name="generator" content="Hugo 0.89.4" />
 
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -24,20 +25,23 @@
 
     
     
-      <link href="/tags/Mathematical-Statistics/index.xml" rel="alternate" type="application/rss+xml" title="Gradon Nicholls" />
-      <link href="/tags/Mathematical-Statistics/index.xml" rel="feed" type="application/rss+xml" title="Gradon Nicholls" />
-      
-    
-    
-    <meta property="og:title" content="Mathematical Statistics" />
-<meta property="og:description" content="Gradon Nicholls&#39; personal website." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gnicholl.github.io/tags/Mathematical-Statistics/" /><meta property="og:site_name" content="Gradon Nicholls" />
+    <meta property="og:title" content="ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test" />
+<meta property="og:description" content="Here is some Stata code I wrote back in 2017. A colleague asked how to perform a Kolmogorov-Smirnov test in Stata when there are more than two groups. I was surprised to find that such a test is not implemented in Stata, nor widely implemented in general. I thought perhaps that this was because such a test did not exist.
+On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test was developed back in 1959 by Jack Kiefer, a mathematical statistician at Cornell." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gnicholl.github.io/post/ksmirnovk/" /><meta property="article:section" content="post" />
 
-<meta itemprop="name" content="Mathematical Statistics">
-<meta itemprop="description" content="Gradon Nicholls&#39; personal website."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Mathematical Statistics"/>
-<meta name="twitter:description" content="Gradon Nicholls&#39; personal website."/>
+<meta property="og:site_name" content="Gradon Nicholls" />
+
+<meta itemprop="name" content="ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test">
+<meta itemprop="description" content="Here is some Stata code I wrote back in 2017. A colleague asked how to perform a Kolmogorov-Smirnov test in Stata when there are more than two groups. I was surprised to find that such a test is not implemented in Stata, nor widely implemented in general. I thought perhaps that this was because such a test did not exist.
+On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test was developed back in 1959 by Jack Kiefer, a mathematical statistician at Cornell.">
+
+<meta itemprop="wordCount" content="611">
+<meta itemprop="keywords" content="Statistics,Mathematical Statistics,Stata," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test"/>
+<meta name="twitter:description" content="Here is some Stata code I wrote back in 2017. A colleague asked how to perform a Kolmogorov-Smirnov test in Stata when there are more than two groups. I was surprised to find that such a test is not implemented in Stata, nor widely implemented in general. I thought perhaps that this was because such a test did not exist.
+On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test was developed back in 1959 by Jack Kiefer, a mathematical statistician at Cornell."/>
 
 	
   </head>
@@ -45,11 +49,13 @@
   <body class="ma0 avenir bg-near-white">
 
     
+   
+  
 
   
   
   <header class="cover bg-top" style="background-image: url('https://gnicholl.github.io/images/heritagetree.jpg');">
-    <div class="bg-black-60">
+    <div class="pb3-m pb6-l bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -306,46 +312,174 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Mathematical Statistics
-        </h1>
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test</h1>
+          
         
       </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="cf pa3 pa4-m pa4-l">
-    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
-      <p>Below are all pages related to Mathematical Statistics.</p>
-    </div>
-  </article>
-  <div class="mw8 center">    
-    <section class="flex-ns flex-wrap justify-around mt5">
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        BLOG
+      </aside>
       
-        <div class="relative w-100  mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="/post/ksmirnovk/" class="link black dim">
-        ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://gnicholl.github.io/post/ksmirnovk/&amp;title=ksmirnovk:%20Stata%20Program%20for%20Performing%20a%20k-sample%20Kolmogorov-Smirnov%20Test" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+        
+        <span class="icon"> <svg {{ with .size }} height="{{ . }}" {{ end }} style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }};"/>
+</svg>
+</span>
+        
       </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Here is some Stata code I wrote back in 2017. A colleague asked how to perform a Kolmogorov-Smirnov test in Stata when there are more than two groups. I was surprised to find that such a test is not implemented in Stata, nor widely implemented in general. I thought perhaps that this was because such a test did not exist.
-On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test was developed back in 1959 by Jack Kiefer, a mathematical statistician at Cornell.
-    </div>
+    
   </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Gradon Nicholls
+          
+          </strong>
+      </p>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><a href="https://github.com/gnicholl/ksmirnovk">Here is some Stata code</a>
+I wrote back in 2017. A colleague asked how to perform a
+Kolmogorov-Smirnov test in Stata when there are more than two groups.
+I was surprised to find that such a test is not implemented
+in Stata, nor widely implemented in general.
+I thought perhaps that this was because such a test did not exist.</p>
+<p>On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test 
+was developed back in 
+<a href="https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-30/issue-2/K-Sample-Analogues-of-the-Kolmogorov-Smirnov-and-Cramer-V/10.1214/aoms/1177706261.full">
+1959 by Jack Kiefer</a>, a 
+<a href="https://www.jstor.org/stable/2683084?seq=1#metadata_info_tab_contents">mathematical statistician at Cornell</a>. 
+I thought it would be straightforward to implement the test given Kiefer&rsquo;s
+formula&ndash;all we need is a test statistic and and a CDF. As you will see,
+it took me down a road of infinite sums, quadrature, and bessel functions.</p>
+<p>The test statisic is straightforward conceptually, though cumbersome to program, as it relies
+on computing maximum (squared) differences between empirical CDFs.
+Let&rsquo;s say we are interested in testing the null hypothesis that the distribution of \(X\) 
+differs in at least one of \(k\) groups. Analogous to the 2-sample Kolmogorov-Smirnov test,
+we use the following test statistic:</p>
+<p>$$D = \sqrt{\max_x \sum_j n_j (S_{n_j}^{(j)} (x) - \bar {S_N} (x))^2}$$</p>
+<p>Where \(j = 1,&hellip;,k\), \(n_j\) is the number of observations in group \(j\), 
+\(S_{n_j}^{(j)} (x)\) is the empirical CDF of group \(j\),
+and \(\bar {S_N} (x)\) is the empirical CDF of the pooled data (i.e. \(N = \sum_j n_j\)).</p>
+<p>Kiefer&rsquo;s contribution was to provide an asymptotic CDF for the distribution of this test statistic
+for general  \(k \geq 2\),
+thereby giving us a method for testing our null hypothesis. The CDF is as follows:</p>
+<p>$$\Phi_k(d) = Pr(D &lt; d; k) = \frac{4}{\Gamma(\frac{k-1}{2})(2d)^{(k-1)/2}} \sum_{n=1}^{\infty} \frac{\gamma_{\frac{k-3}{2},n} \exp {\frac{\gamma_{(k-3)/2,n}}{2d}}}{[J_{\frac{k-1}{2}} (\gamma_{(k-3)/2,n})]^2}$$</p>
+<p>and the p-value for our test is \(Pr(D &gt; d; k) = 1 - \Phi_k(d)\).</p>
+<p>In the case of \(k=2\), this test simplifies to</p>
+<p>$$\Phi_2(d) = \sqrt{\frac{2\pi}{d}} \sum_{n=1}^{\infty} e^{-\frac{((2n-1)\pi)^2}{8d} }$$</p>
+<p>which is the <a href="https://www.jstatsoft.org/article/view/v008i18">
+original two-sample Kolmogorov-Smirnov test</a>.</p>
+<p>It turns out the formula also simplifies to elementary functions
+in the case of \(k=4\):</p>
+<p>$$\Phi_4(d) = \sqrt{\frac{2 \pi^5}{d^3}} \sum_{n=1}^{\infty}  n^2 e^{-\frac{(n\pi)^2}{2d}}  $$</p>
+<p>However, in the cases \(k=3\) or \(k&gt;4\) it is a slow and computationally intensive task to compute the CDF.
+This is because it depends on \(J_{(k-1)/2}\), which is a bessel function of the first kind,
+and \(\gamma_{(k-3)/2,n}\), which is the nth root of bessel function \(J_{(k-3)/2}\).</p>
+<p>Bessel funtions have infinitely many roots, and we need to find as many as we can
+in order to approximate the infinite sum in \(\Phi_k(d)\). 
+Additionally, the bessel function itself can be written using integrals,
+and therefore requires quadrature to compute.</p>
+<p>To speed things up for real-time use,
+I pre-compute the first 30 Bessel roots in cases \(k=3,5,6,7,8,9,10\).
+Therefore, as long as you are not attempting this test on 11 or more groups,
+it should run relatively quickly, though we still need to evaluate the bessel
+function using quadrature (unless \(k=2\) or \(k=4\)), and to compute
+the first 30 terms of the infinite sum.</p>
+<p>It turns out that 30 roots (i.e. 30 terms of the sum)
+and 200 quadrature points was enough to 
+<a href="https://github.com/gnicholl/ksmirnovk/raw/main/LookupTable.xlsx">
+reproduce Kiefer&rsquo;s results</a>,
+which were reported up to 6 decimal places for cases \(k=2,&hellip;,6\).
+I imagine that with more experimentation, one could find that even fewer roots
+and fewer quadrature points would be sufficient. Note for example that in 
+<a href="https://www.stata.com/manuals/rksmirnov.pdf">Stata&rsquo;s documentation of
+the ksmirnov command</a> they use only the first 5 terms, though this is
+of course only in the simpler \(k=2\) case.</p>
+<p>The command can be run simply as</p>
+<pre tabindex="0"><code>ksmirnovk X , by(group)
+</code></pre><p>where <code>group</code> should contain categories that are integers from \(1\) to \(k\).</p>
+<p>I think Kiefer would be pleased that someone implemented his test all these years later and double-checked his results!</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/Statistics" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Statistics</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/Mathematical-Statistics" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Mathematical Statistics</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/Stata" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Stata</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/post/musiccriticspresentation/">How Influential Are Music Critics?</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/BradleyEtAl2021/">The Big Data Paradox in COVID Surveys</a>
+        </li>
+	    
+    </ul>
 </div>
 
-        </div>
-      
-    </section>
-  </div>
+</aside>
+
+  </article>
 
     </main>
     <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">
