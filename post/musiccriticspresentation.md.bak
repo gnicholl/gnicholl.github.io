@@ -4,7 +4,7 @@ description: ""
 featured_image: '/images/heritagetree.jpg'
 tags: ["Data Science", "R" , "Stata" , "Coursework", "Research"]
 title: "How Influential Are Music Critics?"
-type: Post
+type: post
 ---
 
 I gave this presentation on December 6, 2021 as part of the course SURV727 "Fundamentals of Cmputing and Data Display."

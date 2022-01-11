@@ -5,83 +5,48 @@
     <link>https://gnicholl.github.io/tags/</link>
     <description>Recent content in Tags on Gradon Nicholls</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Gradon Nicholls 2021</copyright><atom:link href="https://gnicholl.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Gradon Nicholls 2021</copyright>
+    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Forests Ontario</title>
+      <link>https://gnicholl.github.io/tags/Forests-Ontario/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/Forests-Ontario/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trees</title>
+      <link>https://gnicholl.github.io/tags/Trees/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/Trees/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Big Data</title>
       <link>https://gnicholl.github.io/tags/Big-Data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gnicholl.github.io/tags/Big-Data/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Coursework</title>
-      <link>https://gnicholl.github.io/tags/Coursework/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnicholl.github.io/tags/Coursework/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Science</title>
-      <link>https://gnicholl.github.io/tags/Data-Science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnicholl.github.io/tags/Data-Science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Literature Review</title>
       <link>https://gnicholl.github.io/tags/Literature-Review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gnicholl.github.io/tags/Literature-Review/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Mathematical Statistics</title>
-      <link>https://gnicholl.github.io/tags/Mathematical-Statistics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnicholl.github.io/tags/Mathematical-Statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://gnicholl.github.io/tags/R/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnicholl.github.io/tags/R/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>https://gnicholl.github.io/tags/Research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnicholl.github.io/tags/Research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stata</title>
-      <link>https://gnicholl.github.io/tags/Stata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnicholl.github.io/tags/Stata/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Statistics</title>
       <link>https://gnicholl.github.io/tags/Statistics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gnicholl.github.io/tags/Statistics/</guid>
       <description></description>
@@ -90,9 +55,63 @@
     <item>
       <title>Survey Methodology</title>
       <link>https://gnicholl.github.io/tags/Survey-Methodology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gnicholl.github.io/tags/Survey-Methodology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematical Statistics</title>
+      <link>https://gnicholl.github.io/tags/Mathematical-Statistics/</link>
+      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/Mathematical-Statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stata</title>
+      <link>https://gnicholl.github.io/tags/Stata/</link>
+      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/Stata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>https://gnicholl.github.io/tags/Coursework/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/Coursework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>https://gnicholl.github.io/tags/Data-Science/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/Data-Science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://gnicholl.github.io/tags/R/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/R/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://gnicholl.github.io/tags/Research/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/tags/Research/</guid>
       <description></description>
     </item>
     

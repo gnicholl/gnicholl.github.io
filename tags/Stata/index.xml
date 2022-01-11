@@ -5,25 +5,26 @@
     <link>https://gnicholl.github.io/tags/Stata/</link>
     <description>Recent content in Stata on Gradon Nicholls</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Gradon Nicholls 2021</copyright><atom:link href="https://gnicholl.github.io/tags/Stata/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How Influential Are Music Critics?</title>
-      <link>https://gnicholl.github.io/post/musiccriticspresentation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnicholl.github.io/post/musiccriticspresentation/</guid>
-      <description>I gave this presentation on December 6, 2021 as part of the course SURV727 &amp;ldquo;Fundamentals of Cmputing and Data Display.&amp;rdquo; I use R for data collection, and then clean and analyze the data in Stata.
-My data science experience grew quickly and greatly during this course, and I had a lot of fun combing various sources of data involving API&amp;rsquo;s from Spotify, Last.FM, Wikipedia, and Google, and using web scraping techniques to obtain review scores from Wikipedia.</description>
-    </item>
-    
+    <copyright>Gradon Nicholls 2021</copyright>
+    <lastBuildDate>Wed, 08 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/tags/Stata/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test</title>
       <link>https://gnicholl.github.io/post/ksmirnovk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gnicholl.github.io/post/ksmirnovk/</guid>
       <description>Here is some Stata code I wrote back in 2017. A colleague asked how to perform a Kolmogorov-Smirnov test in Stata when there are more than two groups. I was surprised to find that such a test is not implemented in Stata, nor widely implemented in general. I thought perhaps that this was because such a test did not exist.
 On the contrary, a k-sample analogue to the Kolmogorov-Smirnov test was developed back in 1959 by Jack Kiefer, a mathematical statistician at Cornell.</description>
+    </item>
+    
+    <item>
+      <title>How Influential Are Music Critics?</title>
+      <link>https://gnicholl.github.io/post/musiccriticspresentation/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/post/musiccriticspresentation/</guid>
+      <description>I gave this presentation on December 6, 2021 as part of the course SURV727 &amp;ldquo;Fundamentals of Cmputing and Data Display.&amp;rdquo; I use R for data collection, and then clean and analyze the data in Stata.
+My data science experience grew quickly and greatly during this course, and I had a lot of fun combing various sources of data involving API&amp;rsquo;s from Spotify, Last.FM, Wikipedia, and Google, and using web scraping techniques to obtain review scores from Wikipedia.</description>
     </item>
     
   </channel>

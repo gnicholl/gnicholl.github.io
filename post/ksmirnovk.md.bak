@@ -1,10 +1,11 @@
 ---
-date: 2021-12-08T08:00
+date: 2021-12-08
+publishdate: 2021-12-08
 description: ""
 featured_image: '/images/heritagetree.jpg'
 tags: ["Statistics", "Mathematical Statistics", "Stata"] 
 title: "ksmirnovk: Stata Program for Performing a k-sample Kolmogorov-Smirnov Test"
-type: Post
+type: post
 ---
 
 <a href="https://github.com/gnicholl/ksmirnovk">Here is some Stata code</a>

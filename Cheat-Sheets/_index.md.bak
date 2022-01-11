@@ -5,12 +5,23 @@ description: ""
 ---
 
 <p style="text-align:left;">
-I'll use this page to compile a list of "cheat sheets" for coding, etc. that I've found to be useful reference guides.
+Useful references I've found around the web:
 </p>
 
 <ul>
 <li><p style="text-align:left;">
 <a href="https://evoldyn.gitlab.io/evomics-2018/ref-sheets/R_strings.pdf">
 Regular expressions in R using stringr
+</a></p></li>
+</ul>
+
+<p style="text-align:left;">
+Useful references I've made myself:
+</p>
+
+<ul>
+<li><p style="text-align:left;">
+<a href="SurvMethFlowChart.pdf">
+Flow chart of the survey process and various types of error
 </a></p></li>
 </ul>
