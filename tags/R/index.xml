@@ -6,7 +6,16 @@
     <description>Recent content in R on Gradon Nicholls</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Gradon Nicholls 2021-2023</copyright>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/tags/R/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/tags/R/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R Tutorial: Multi-State Models</title>
+      <link>https://gnicholl.github.io/post/multistatemodelsRtutorial/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/post/multistatemodelsRtutorial/</guid>
+      <description>I wrote this tutorial on estimating multi-state models in R as part of the class STAT 935 (Survival Analysis) at University of Waterloo. There are other tutorials out there, but this one (in my biased opinion, and to the best of my knowledge) is the only one that goes one by one through each type of mult-state model, the theory, how to structure the data, and how to estimate the models using the coxph function in R.</description>
+    </item>
+    
     <item>
       <title>How Influential Are Music Critics?</title>
       <link>https://gnicholl.github.io/post/musiccriticspresentation/</link>
