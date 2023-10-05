@@ -8,31 +8,41 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/tags/Coursework/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/tags/Natural-Language-Processing/</loc>
+    <lastmod>2023-10-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/tags/R/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://gnicholl.github.io/post/multistatemodelsRtutorial/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+    <loc>https://gnicholl.github.io/post/StatisticalMachineTranslation/</loc>
+    <lastmod>2023-10-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/tags/Statistics/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://gnicholl.github.io/tags/</loc>
+    <lastmod>2023-10-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gnicholl.github.io/post/multistatemodelsRtutorial/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

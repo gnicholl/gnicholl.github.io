@@ -6,7 +6,16 @@
     <description>Recent content on Gradon Nicholls</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Gradon Nicholls 2021-2023</copyright>
-    <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gnicholl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Statistical Machine Translation: R Package</title>
+      <link>https://gnicholl.github.io/post/StatisticalMachineTranslation/</link>
+      <pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnicholl.github.io/post/StatisticalMachineTranslation/</guid>
+      <description>I wrote an R package for conducting Statistical Machine Translation (SMT) as part of my first-year comps. Find it here. It is based largely on Koehn&amp;rsquo;s 2009 SMT book and implements the so-called &amp;ldquo;IBM&amp;rdquo; models, as well as phrase-based translation. While these methods have been largely supplanted by neural network-based methods, they are still interesting models, and the IBM models can be used to derive word alignments between a sentence and its translation.</description>
+    </item>
+    
     <item>
       <title>R Tutorial: Multi-State Models</title>
       <link>https://gnicholl.github.io/post/multistatemodelsRtutorial/</link>
